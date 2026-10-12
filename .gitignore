@@ -1,2 +1,4 @@
 /raw/AppServer
 /raw/Client
+bin/
+obj/

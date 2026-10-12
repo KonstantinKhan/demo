@@ -1,0 +1,53 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build (Debug)",
+            "type": "shell",
+            "command": "dotnet",
+            "args": [
+                "build",
+                "${workspaceFolder}/ExecutionsPlugin/ExecutionsPlugin.csproj",
+                "-c",
+                "Debug",
+                "-nologo",
+                "-v",
+                "minimal"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "build (Release)",
+            "type": "shell",
+            "command": "dotnet",
+            "args": [
+                "build",
+                "${workspaceFolder}/ExecutionsPlugin/ExecutionsPlugin.csproj",
+                "-c",
+                "Release",
+                "-nologo",
+                "-v",
+                "minimal"
+            ],
+            "group": "build",
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "clean",
+            "type": "shell",
+            "command": "dotnet",
+            "args": [
+                "clean",
+                "${workspaceFolder}/ExecutionsPlugin/ExecutionsPlugin.csproj",
+                "-nologo",
+                "-v",
+                "minimal"
+            ],
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}

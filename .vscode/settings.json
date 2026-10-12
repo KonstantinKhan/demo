@@ -1,0 +1,4 @@
+{
+    "dotnet.preferCSharpExtension": true
+    // Сборка идёт через `dotnet build` (см. tasks.json) — отдельный терминал с окружением VS не нужен.
+}
