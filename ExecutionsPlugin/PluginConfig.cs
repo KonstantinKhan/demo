@@ -12,8 +12,8 @@ namespace ExecutionsPlugin
         public string DetailType { get; set; } = "Деталь";
         public string ExecutionLinkType { get; set; } = "Исполнения";
         public string CompositionLinkType { get; set; } = "Состоит из ...";
-        /// <summary>Состояние новых объектов. Пусто = ошибка при создании: задать в plugin-config.json.</summary>
-        public string NewObjectState { get; set; } = string.Empty;
+        /// <summary>Состояние новых объектов. Пусто = ошибка 410204 при создании.</summary>
+        public string NewObjectState { get; set; } = "Проектирование";
         public string NameAttribute { get; set; } = "Наименование";
         /// <summary>Идентификатор единицы измерения для связи (stIdUnit). Пусто = без единицы.</summary>
         public string UnitId { get; set; } = string.Empty;
